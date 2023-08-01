@@ -3,11 +3,11 @@
 // 82 -> 10
 // 9012 -> 12
 
-int Prompt(string message)
+int Prompt(string message)//исправление конвертации строки в int
 {
     System.Console.Write(message);
-    int readInput = Convert.ToInt32(Console.ReadLine());
-    int result = Math.Abs(readInput);
+    string readInput = System.Console.ReadLine()!;
+    int result = Convert.ToInt32(readInput);
     return result;
 }
 
